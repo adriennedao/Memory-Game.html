@@ -6,10 +6,10 @@ var cards = ['queen', 'queen', 'king', 'king'];
 // represents the cards in play
 var cardsInPlay = [];
 
-var cardOne = 'king';
-var cardTwo = 'king';
-var cardThree = 'queen';
-var cardFour = 'queen';
+// var cardOne = 'king';
+// var cardTwo = 'king';
+// var cardThree = 'queen';
+// var cardFour = 'queen';
 
 //if (cardOne === cardTwo) {
 //	alert('You found a match!');
@@ -51,15 +51,14 @@ if (this.getAttribute('data-card') === 'king') {
 } else {
 	this.innerHTML ="<img src='/Users/kinga/Downloads/queen.png'>";//queen
 		}
-	}
+	
 		
 if (cardsInPlay.length === 2) { //if two cards are chosen
 	isMatch(cardsInPlay);//start the function isMatch
-	cardsInplay = [];//clear cards in play array for next try
+	cardsInPlay = [];//clear cards in play array for next try
 	}
-
-
-var isMatch = function(cards) {
+}
+function isMatch(cards){
   if (cards[0] === cards[1]) {
   	 alert("You found a match!");
   } else {
